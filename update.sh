@@ -1,1 +1,5 @@
+echo " /\ /\ /\ /\ /\ /\ /\ /\ /\"
+echo "   Ignore errors up here."
+echo ""
+echo "Checking for updates.."
 echo "No updates right now."
