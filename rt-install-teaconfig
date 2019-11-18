@@ -1,0 +1,8 @@
+echo "Setting up directory..."
+cd /tmp
+echo "Downloading files..."
+git clone https://github.com/SkywalkerSW5/teaconfig.git
+echo "Installing files..."
+cp teaconfig /usr/bin
+chmod +x /usr/bin/teaconfig
+echo "Done"
