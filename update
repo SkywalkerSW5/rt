@@ -1,1 +1,5 @@
-echo "No updates right now."
+echo "Updating sources..."
+chmod +x /etc/rt/rt/rt-log
+chmod +x /etc/rt/rt/rt-install-teaconfig
+cp /etc/rt/rt/rt-log /usr/bin/
+cp /etc/rt/rt/rt-install-teaconfig /usr/bin/
