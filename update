@@ -1,5 +1,13 @@
 echo "Updating sources..."
 chmod +x /etc/rt/rt/rt-log
 chmod +x /etc/rt/rt/rt-install-teaconfig
+chmod +x /etc/rt/rt/signature
 cp /etc/rt/rt/rt-log /usr/bin/
 cp /etc/rt/rt/rt-install-teaconfig /usr/bin/
+cp /etc/rt/rt/signature /usr/bin/
+echo ""
+echo ""
+echo "_________________________________________"
+echo "Update complete"
+echo ""
+echo "Signed by SkywalkerSW5 on Dec 3, 2019 via Chrome OS"
