@@ -1,2 +1,0 @@
-echo "Looking ..."
-ls /etc/rt/rt-log
