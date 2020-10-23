@@ -1,0 +1,47 @@
+#!/bin/bash
+source /usr/rt/etc/source.rt
+echo "rt 0.0.1"
+$tar = "$ins" + ".ins.rt" 2> /dev/null
+wget $tar 2> /dev/null
+
+
+update() {
+	rm /usr/bin/ddw
+	echo "Updateing ddw"
+	sudo wget https://raw.githubusercontent.com/SkywalkerSW5/ddw/master/ddw -P /usr/bin
+	sudo chmod +x /usr/bin/ddw
+
+}
+usage() {
+	echo 
+	echo "Usage:"
+	echo
+	echo "ddw iso: Writes selected iso to selected drive;"
+	echo "ddw mount: Mounts the selected iso;"
+	echo "ddw lsiso"
+}
+
+help() {
+	usage();;
+}
+
+
+
+ if [ -z "$*" ]; then 
+	echo "Run ddw usage for usage info"; fi
+
+for a in $@; do
+    case $a in
+        "") echo;;
+        "iso") iso;;
+	"mount") mount;;
+        "usage") usage;;
+        "help") usage;;
+	"update") update;;
+	"port") port;;
+	"lsiso") lsiso;;
+        *)
+
+            
+    esac
+done

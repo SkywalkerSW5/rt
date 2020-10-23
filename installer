@@ -1,0 +1,16 @@
+echo "Welcome to the rt installer"
+
+sudo mkdir /usr/rt
+cd ~ 
+mkdir .rt
+cd .rt
+git clone https://github.com/SkywalkerSW5/rt
+cd rt
+sudo cp ./rt /usr/bin
+
+
+sudo mkdir /usr/rt/etc
+sudo mkdit /ust/rt/installed
+
+sudo cp sources.rt /usr/rt/etc/
+sudo cp off.rt.source /usr/rt/etc
