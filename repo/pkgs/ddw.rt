@@ -1,0 +1,22 @@
+$PACKAGE="ddw"
+$ABOUT="A cli utility to write ISOs to a USB"
+$PACKAGE_VERSION="3.1"
+preinstall() {
+	cd ~/.rt/pkgs
+}
+install() {
+	git clone https://github.com/icetee/pv.git
+	cd pv
+	./configure
+	make
+	sudo make install
+	sudo wget https://raw.githubusercontent.com/SkywalkerSW5/ddw/master/ddw -P /usr/bin/ && sudo chmod +x /usr/bin/ddw
+
+
+	
+}
+postinstall {
+	cd ~/.rt
+	touch ddw
+	sudo cp ./ddw /usr/rt/pkgs
+}
