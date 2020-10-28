@@ -1,1 +1,17 @@
+# These are the files linked to rt, dont mess with these
+
+# rt Links
+source /usr/rt/vars.rt
+
+
+
+
+
+
+
+
+# These are the repo sources
+
+# rt Repo Sources
+
 $rt-s1="https:/"
